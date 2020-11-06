@@ -1,1 +1,1 @@
-# facesForProject
+# elbrus-faceid-project
