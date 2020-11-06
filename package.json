@@ -1,0 +1,23 @@
+{
+  "name": "pet_project",
+  "version": "1.0.0",
+  "main": "face-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "faceapi": "^1.0.1",
+    "hbs": "^4.1.1",
+    "html": "^1.0.0",
+    "mime-types": "^2.1.27",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "description": ""
+}

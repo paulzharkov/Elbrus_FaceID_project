@@ -1,0 +1,4 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+public/labeled_images/
