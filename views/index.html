@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,11 +21,27 @@
 
     canvas {
       position: absolute;
-      /* margin-top: 35px; */
+      margin-top: -35px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 25px 42px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
     }
   </style>
 </head>
+
 <body>
-<video id="video" width="720" height="560" autoplay muted></video>
+  <video id="video" width="720" height="560" autoplay muted></video>
+  <form action="/" method="POST">
+    <button id="button"></button>
+  </form>
 </body>
+
 </html>

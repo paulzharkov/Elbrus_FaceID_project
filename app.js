@@ -9,5 +9,7 @@ app.use(express.static(basePath))
 
 app.get('/', (req, res) => res.sendFile(__dirname + '/views/index.html'))
 
-app.listen(5010)
+app.post('/', (req, res) => res.redirect('https://everfest.ru/'))
+
+app.listen(5020)
 

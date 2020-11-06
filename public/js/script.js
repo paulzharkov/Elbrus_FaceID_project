@@ -18,7 +18,6 @@ async function start() {
 
 async function recognizeFaces() {
   const labeledDescriptors = await loadLabeledImages()
-  console.log(labeledDescriptors)
   const faceMatcher = new faceapi.FaceMatcher(labeledDescriptors, 0.7)
   video.addEventListener('play', async () => {
     const canvas = faceapi.createCanvasFromMedia(video)
@@ -37,6 +36,14 @@ async function recognizeFaces() {
       results.forEach((result, i) => {
         const box = resizedDetections[i].detection.box
         const drawBox = new faceapi.draw.DrawBox(box, { label: result.toString() })
+        const names = ['Paul', 'Vitya', 'Dima', 'Igor', 'Ilona', 'Masha', 'Taras'] 
+        for (let i = 0; i < names.length; i++) {
+          const name = names[i];
+          if (result.label == name) {
+            const button = document.getElementById('button')
+            button.innerHTML = `Welcome, ${name}`;
+          }
+        }
         drawBox.draw(canvas)
       })
     }, 100)
@@ -55,7 +62,6 @@ function loadLabeledImages() {
         console.log(label + i + JSON.stringify(detections))
         descriptions.push(detections.descriptor)
       }
-      console.log(label)
       return new faceapi.LabeledFaceDescriptors(label, descriptions)
     })
   )
