@@ -3,4 +3,4 @@
 
 #### Пример работы проекта:
 
-![Example](https://github.com/paulzharkov/Elbrus_FaceID_project/blob/main/client/src/assets/пост.png 'Example')
+![Example](https://github.com/paulzharkov/Elbrus_FaceID_project/blob/main/public/assets/%D0%BF%D0%BE%D1%81%D1%82.png 'Example')
